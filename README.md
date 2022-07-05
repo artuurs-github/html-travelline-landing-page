@@ -2,7 +2,7 @@
 
 ## Project link
 ```
-https://artuurs-github-travelline-landing-page.netlify.app
+https://artuurs-github-html-travelline-landing-page.netlify.app
 ```
 
 ## Project description
