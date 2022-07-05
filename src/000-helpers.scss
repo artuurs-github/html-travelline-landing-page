@@ -1,0 +1,201 @@
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.align-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// ========== MARGINS ========== //
+
+.mT10 {
+  margin-top: 10px;
+}
+.mT50 {
+  margin-top: 50px;
+}
+.mT75 {
+  margin-top: 75px;
+}
+.mT100 {
+    margin-top: 100px;
+  }
+.mB175 {
+  margin-bottom: 175px;
+}
+.mB50 {
+  margin-bottom: 50px;
+}
+.mB25 {
+    margin-bottom: 25px;
+  }
+.mB100 {
+  margin-bottom: 100px;
+}
+
+// ========== PADDINGS ========== //
+
+.pT100 {
+  padding-top: 100px;
+}
+.pL100 {
+  padding-left: 100px;
+}
+.pL220 {
+  padding-left: 220px;
+}
+.pLR50 {
+  padding: 0px 50px 0px 50px;
+}
+.pR50 {
+  padding-right: 50px;
+}
+.pR175 {
+  padding-right: 175px;
+}
+.pB20 {
+  padding-bottom: 20px;
+}
+.p45 {
+  padding: 45px;
+}
+.p0 {
+  padding: 0px;
+}
+
+// ========== GAPS ========== //
+
+.gap10 {
+  gap: 10px;
+}
+.gap25 {
+  gap: 25px;
+}
+.gap40 {
+  gap: 40px;
+}
+.gap50 {
+  gap: 50px;
+}
+.gap70 {
+  gap: 70px;
+}
+.gap100 {
+  gap: 100px;
+}
+
+// ========== CONTAINERS ========== //
+
+.wrapper {
+  padding: 0px 170px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-second {
+  display: flex;
+}
+
+.container-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+// ========== TEXT-STYLES ========== //
+
+.heading-nunito {
+  font-family: "Nunito Sans", sans-serif;
+  color: #000000;
+}
+
+.heading-poppins {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+.paragraph-nunito {
+  font-family: "Nunito Sans";
+  color: #2c2d32;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+}
+
+.paragraph-poppins {
+  font-family: "Poppins", sans-serif;
+  color: #2c2d32;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+}
+
+.grey {
+  color: #696984;
+}
+
+.w800-54px {
+  font-weight: 800;
+  font-size: 54px;
+}
+
+.w700-60px {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.w700-40px {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.w700-36px {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.w700-24px {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.w600-44px {
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.w400-24px {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.w400-20px {
+  font-weight: 400;
+  font-size: 20px;
+}

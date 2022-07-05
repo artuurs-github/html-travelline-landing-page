@@ -1,0 +1,569 @@
+@import "000-reset.scss";
+@import "000-helpers.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 1926px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+// ========== HOVER BUTTON ========== //
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+.hover-button {
+  visibility: visible;
+  background-color: #b25a59;
+  border: none;
+  text-align: center;
+  border-radius: 100px;
+  outline: 3px solid #FFFFFF;
+  padding: 25px 50px;
+  position: fixed;
+  left: 80%;
+  bottom: 50px;
+    
+}
+
+// ========== HEADER ========== //
+
+.header {
+  padding: 60px 105px 0px 105px;
+  width: 100%;
+  background-color: #f0c53e;
+}
+
+.logo {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  list-style-type: none;
+}
+
+.navigation__item {
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  color: #252641;
+  text-decoration: none;
+  padding: 5px 25px;
+  outline: 3px solid transparent;
+  border-radius: 25px;
+  transition: 0.25s;
+  &:hover {
+    outline: 3px solid #7f2736;
+    transition: 0.25s;
+  }
+}
+
+.contacts {
+  border: 1px dashed lightgrey;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 19px 38px;
+  background: #b25a59;
+  color: #ffffff;
+  border: none;
+  border-radius: 80px;
+  outline: 5px solid transparent;
+  transition: 0.25s;
+  &:hover {
+    cursor: pointer;
+    outline: 5px solid #FFFFFF;
+    background: #7f2736;
+    transition: 0.25s;
+  }
+}
+
+.btn__text {
+  padding-left: 21px;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
+
+// ========== HERO ========== //
+
+.hero {
+  padding: 92px 100px 127px 100px;
+  background: #f0c53e;
+  border-bottom-left-radius: 100% 25%;
+  border-bottom-right-radius: 100% 25%;
+}
+
+.btn__text--second {
+  padding: 0px;
+}
+
+.btn--play {
+  padding: 0px;
+  background: none;
+  color: #252641;
+  &:hover {
+    outline: 5px solid #23BDEE;
+  }
+}
+
+.btn__icon--second {
+  background: #ffffff;
+  border-radius: 90px;
+  padding: 24px 24px 24px 30px;
+}
+
+.btn__text--third {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  padding: 0px;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+.toast {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #FFFFFF;
+  color: #23BDEE;
+  text-align: center; /* Centered text */
+  border-radius: 80px; /* Rounded borders */
+  outline: 3px solid #23BDEE;
+  padding: 25px 50px; /* Padding */
+  position: fixed;
+  // z-index: 1; /* Add a z-index if needed */
+  left: 71%; /* Center the snackbar if needed */
+  top: 60px; /* 30px from the top */
+  font-family: inherit;
+  font-size: 24px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show-toast {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 60px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 60px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 60px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 60px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+.subscribe-href {
+  color: inherit;
+  font-weight: bold;
+}
+
+// ========== PROMOTIONAL TOUR ========== //
+
+.promotional-tour {
+  margin-top: 165px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 61px;
+}
+
+.slide {
+  display: flex;
+  gap: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.country__img {
+  width: 450px;
+  height: 430px;
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
+}
+
+.red__text {
+  margin-top: 27px;
+  font-weight: 500;
+  font-size: 30px;
+  color: #7f2736;
+}
+
+.button-arrow {
+  background-color: #FFFFFF;
+  padding: 50px 10px;
+  border: none;
+  border-radius: 25px;
+  transition: 0.25s;
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+    transition: 0.25s;
+  }
+  &:active {
+    background-color: rgb(200, 200, 200);
+  }
+}
+
+// ========== GLOBALLY ACCEPTED ========== //
+
+.globally-accepted {
+  margin-top: 171px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  background: #7f2736;
+  opacity: 0.8;
+  background-image: url(assets/images/ga-domestic.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.card--secondary {
+  background-image: url(assets/images/ga-international.svg);
+}
+
+.card__text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.btn--card {
+  padding: 24px 58px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 80px;
+  outline: 3px solid transparent;
+  transition: 0.25s;
+  &:hover {
+    background: #7f2736;
+    outline: 3px solid #ffffff;
+    transition: 0.25s;
+  }
+}
+
+.btn__text--card {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+// ========== LATEST TOUR ========== //
+
+.latest-tour {
+  margin-top: 213px;
+  padding: 40px;
+  width: 100%;
+  background: #f0c53e;
+  border-radius: 20px;
+}
+
+.simple-href {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 180%;
+  color: #ee5060;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+// ========== OUR TEAM ========== //
+
+.our-team {
+  margin-top: 208px;
+}
+
+.img-team {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+}
+
+// ========== WHY CHOOSE US ========== //
+
+.why-choose-us {
+  margin-top: 155px;
+}
+
+.container-cardbox {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 122px 55px 50px 55px;
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
+  position: relative;
+}
+
+.img-cardbox {
+  position: absolute;
+  top: -50px;
+  left: 185px;
+  width: 100px;
+  height: 100px;
+}
+
+// ========== WHAT CUSTOMERS SAY ========== //
+
+.what-customers-say {
+  margin-top: 195px;
+}
+
+.wrapper2 {
+  padding: 0px 200px 0px 200px;
+}
+
+.btn--customers {
+  display: flex;
+  gap: 75px;
+  background-color: #ffffff;
+  color: #ee5060;
+  border: 1px solid #ee5060;
+  &:hover {
+    outline: 3px solid #ee5060;
+    background: #FFFFFF;
+  }
+}
+
+// ========== UPCOMING TRIPS ========== //
+
+.upcoming-trips {
+  margin-top: 88px;
+  width: 92%;
+}
+
+.img-luggage {
+  width: 82px;
+  height: 93px;
+}
+
+.btn--join {
+  padding: 12px 47px;
+}
+
+// ========== LATEST NEWS ========== //
+
+.latest-news {
+  margin-top: 100px;
+}
+
+.img-news {
+  width: 280px;
+  height: 200px;
+}
+
+.btn--news {
+  background: #f0c53e;
+  padding: 3px 36px;
+  pointer-events: none;
+}
+
+.btn--news-second {
+  background: #f0c53e;
+  padding: 0px 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  pointer-events: none;
+}
+
+.btn__text--news {
+  color: #2c2d32;
+  padding: 3px 0px 0px 0px;
+}
+
+.red__text--news-sm {
+  margin: 0px 0px 25px 0px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.container-special {
+  display: flex;
+  width: 63%;
+  flex-direction: column;
+  position: relative;
+}
+
+// ========== LATEST NEWS ========== //
+
+.footer {
+  margin-top: 146px;
+  background-color: #7f2736;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-footer {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #f0c53e;
+}
+
+.container-input {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input {
+  width: 400px;
+  height: 60px;
+  padding: 15px 30px;
+  border: 1px solid #F0C53E;
+  border-radius: 80px;
+  background-color: #7f2736;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  &:focus {
+    outline: 3px solid #FFFFFF;
+  };
+}
+
+::placeholder {
+  color: #FFFFFF;
+}
+
+.btn-footer {
+  padding: 16px 34px 14px 34px;
+  background: linear-gradient(105.5deg, #EE5060 19.57%, #B25A59 78.85%);
+  border: none;
+  border-radius: 60px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  outline: 3px solid transparent;
+  transition: 0.25s;
+  &:hover {
+    cursor: pointer;
+    outline: 3px solid #FFFFFF;
+    transition: 0.25s;
+  }
+}
+
+// ========== LIST: START ========== //
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 15px 30px;
+  background: #a53b4c;
+  border-radius: 15px;
+  outline: 3px solid transparent;
+  transition: 0.25s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+    outline: 3px solid #FFFFFF;
+    transition: 0.25s;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  color: #FFFFFF;
+}
+
+// ========== LIST: END ========== //
+
+.navigation--footer {
+  gap: 50px;
+}
+
+.navigation__text--footer {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  color: #A7283E;
+  text-decoration: none;
+}
+
+.paragraph-footer {
+  color: #A7283E;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  color: #A7283E;
+}
+
+// ========== CLASSWORK ========== //
