@@ -41,7 +41,7 @@ module.exports = {
   },
   plugins: [new HtmlWebpackPlugin({
     template: 'src/index.html',
-    favicon: 'favicon.png',
+    favicon: 'src/favicon.png',
     chunks: [],
   }),
   new CopyPlugin({
